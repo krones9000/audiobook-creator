@@ -93,7 +93,7 @@ def main():
             progress_bar = st.progress(0)
             status_text = st.empty()
             for i, (title, content) in enumerate(selected_sections):
-                chunks = split_text(content, max_chars=100000)
+                chunks = split_text(content, max_chars=4000000)
                 for j, chunk in enumerate(chunks):
                     output_file = generate_output_file(chunk, selected_voice, book_name, i, j)
                     if output_file is None:
