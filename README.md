@@ -8,6 +8,8 @@ Knowing exactly how to segement an ebook is non-trivial. I've implemented two ap
 
 Essentially, the app looks for markers typically used to indicate chapters and tries to segment on chapters. If it can't detect chapters, or if the chapter count is low (set on the page but defaulting to 4), suggesting the book might be incorrectly formatted as one single large chapter, then it will default to a text chunking approach. Currently that chunking works on chunks of approximately 10,000 words (to the nearest sentence). However, you can change this in the app.py if you'd like smaller chunks (to make editting any mistakes easier) or if you want more granualirity of files/generations by editting `words_per_section` on line 21.
 
+The app also tries to account for poorly formatted ebooks. It does this by adding additional spaces around punctuation in such a way that might look a bit funny, but shouldn't interfere with/should actively make the TTS function better. 
+
 <p align="center">
 <img src="https://github.com/user-attachments/assets/d24e7931-2bc0-4665-a2eb-93085d1793f8" width="500" title="Showing what the interface looks like after completing a BPM change on a folder."/>
 </p>
