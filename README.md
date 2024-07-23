@@ -59,7 +59,7 @@ Essentially, the app looks for markers typically used to indicate chapters and t
 
    Note that you may need to rename the files downloaded from Hugging Face to match this format.
 
-   We recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_US/libritts_r/medium)" voice model for a clear English-speaking voice.
+   I recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_US/libritts_r/medium)" voice model for a clear English-speaking voice.
 
 4. **Configuration:**
 
