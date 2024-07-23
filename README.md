@@ -11,7 +11,7 @@ Essentially, the app looks for markers typically used to indicate chapters and t
 The app also tries to account for poorly formatted ebooks. It does this by adding additional spaces around punctuation in such a way that might look a bit funny, but shouldn't interfere with/should actively make the TTS function better. 
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/d24e7931-2bc0-4665-a2eb-93085d1793f8" width="500" title="Showing what the interface looks like after completing a BPM change on a folder."/>
+<img src="https://github.com/user-attachments/assets/d24e7931-2bc0-4665-a2eb-93085d1793f8" width="500" title="Showing what the interface looks like."/>
 </p>
 
 
@@ -75,7 +75,14 @@ The app also tries to account for poorly formatted ebooks. It does this by addin
 
    Note: On Windows systems, you may need to include file extensions in the `PIPER_LOCATION` path.
 
-5. **Run the Streamlit app:**
+   Your file system should look like this:
+
+   <p align="left">
+   <img src="https://github.com/user-attachments/assets/d45231a4-53e0-42ce-9585-66aed27fd21e" title="Showing what the file structure should be."/>
+   </p>
+
+
+6. **Run the Streamlit app:**
 
    ```
    streamlit run app.py
